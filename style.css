@@ -485,7 +485,7 @@ span {
 }
 @media (max-width:320px){
      .service-info p{
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     font-weight: 400;
     max-height: 100px;
     margin: auto;
