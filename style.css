@@ -61,12 +61,11 @@ html::-webkit-scrollbar-thumb {
     transition: 0.5s ease;
 }
 .logo img {
-    height: 70px;
+    height: 50px;
     
 }
 .logo:hover{
     transform: scale(1.1);
-    box-shadow: 1px 1px 1px 1px var(--main-color);
 }
 .navbar a{
     font-size: 1.8rem;
@@ -129,11 +128,13 @@ section{
     align-items: center;
     gap: 8rem;
     background: var(--bg-color);
+    margin-top: 4.5rem;
 }
 .home .home-content h1{
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.3;
+    margin-top: 1rem;
 }
 span {
     color: var(--main-color)
@@ -145,6 +146,7 @@ span {
 }
 .home-img {
     border-radius: 50%;
+    margin-top: 1rem;
     
 }
 .home-img img {
@@ -318,6 +320,20 @@ span {
     hyphens: auto;
 }
 }
+@media  (max-width:768px){
+    .home {
+      padding-top:  100px;
+    }
+}
+@media  screen and (max-width:426px){
+    .home {
+      padding-top:  50px;
+    }
+    .home .home-content h1 {
+        font-size: 4rem;
+    }
+}
+
 
 
 /* ----- Services ----- */
@@ -596,6 +612,7 @@ span {
     font-weight: 500;
     margin-left: 0.5rem;
 }
+
 }
 
 /* ----- Education ----- */
