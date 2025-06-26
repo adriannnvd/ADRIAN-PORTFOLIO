@@ -60,8 +60,13 @@ html::-webkit-scrollbar-thumb {
     cursor: pointer;
     transition: 0.5s ease;
 }
+.logo img {
+    height: 70px;
+    
+}
 .logo:hover{
     transform: scale(1.1);
+    box-shadow: 1px 1px 1px 1px var(--main-color);
 }
 .navbar a{
     font-size: 1.8rem;
@@ -220,6 +225,9 @@ span {
     right: 0;
     animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
+.home-content p{
+    text-align: left;
+}
 
 
 
@@ -302,6 +310,13 @@ span {
     font-size: 20px;
     text-align: left;
   }
+  .logo img{
+    height: 50px;
+  }
+  .home-content p{
+    text-align: justify;
+    hyphens: auto;
+}
 }
 
 
@@ -343,6 +358,7 @@ span {
     transform: scale(1.03);
     border: 1px solid var(--main-color);
 }
+
 .service-box .service-info {
     display: flex;
     flex-direction: column;
@@ -354,7 +370,7 @@ span {
 }
 .service-info h4 {
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 1rem;
 }
 .service-info p{
@@ -362,6 +378,41 @@ span {
     font-weight: 400;
     max-height: 100px;
     margin: auto;
+    text-align: justify;
+    hyphens: auto;
+    color: var(--text-color);
+}
+@media (min-width:1440px){
+  
+    .service-info p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    max-height: 100px;
+    margin: auto;
+    text-align: justify;
+    hyphens: auto;
+    color: var(--text-color);
+}
+    .service-info h4{
+        text-align: center;
+    }
+}
+@media (max-width:1024px){
+     .services-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .service-info p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    max-height: 100px;
+    margin: auto;
+    text-align: justify;
+    hyphens: auto;
+    color: var(--text-color);
+}
+    .service-info h4{
+        text-align: center;
+    }
 }
 @media (max-width:991px){
     section {
@@ -373,7 +424,28 @@ span {
     .services-container {
         grid-template-columns: repeat(2,1fr);
     }
+    .service-info p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    max-height: 100px;
+    margin: auto;
+    text-align: justify;
+    hyphens: auto;
+    color: var(--text-color);
 
+}
+}
+@media (max-width:895px){
+     .service-info p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    max-height: 100px;
+    margin: auto;
+    text-align: justify;
+    hyphens: auto;
+    color: var(--text-color);
+
+}
 }
 @media (max-width:895px){
     .services h2{
@@ -394,6 +466,18 @@ span {
         border-left: none;
         border-bottom: 2px solid var(--main-color)
     }
+}
+@media (max-width:320px){
+     .service-info p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    max-height: 100px;
+    margin: auto;
+    text-align: justify;
+    hyphens: auto;
+    color: var(--text-color);
+
+}
 }
 
 /* ----- Skills ----- */
@@ -464,7 +548,19 @@ span {
     border-left: 2px solid var(--main-color);
 }
 
-@media screen and (max-width:600px){
+
+@media (max-width:1024px){
+    .skills .container .row {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 1rem;
+        padding: 2rem 0.2rem 2rem 0.2rem;
+        gap: 1rem;
+    }
+    .skills .container {
+        width: 95%;
+    }
+}
+@media screen and (max-width:768px){
     .skills .container {
         margin: 0;
         padding: 0;
@@ -493,6 +589,13 @@ span {
     
     }   
 
+}
+@media screen and (max-width:375px){
+   .skills-containers .container .bar .info span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
 }
 
 /* ----- Education ----- */
@@ -599,6 +702,10 @@ span {
 .education .content .decs p {
     font-size: 1.3rem;
     font-weight: 500;
+    color: var(--second-bg-color);
+    text-align: justify;
+    /* hyphens: auto; */
+    padding: 15px;
 }
 
 .education .heading {
@@ -606,8 +713,17 @@ span {
     transform: rotate(180deg); 
     border-left: 2px solid var(--main-color); 
 }
+@media screen and (max-width:1440px){
+    .education{
+        gap: 10px;
+    }
+
+}
 
 @media screen and (max-width:600px) {
+     .education{
+        gap: 10px;
+    }
     .education .timeline {
         margin-top: 2rem;
     }
@@ -623,7 +739,7 @@ span {
         font-size: 2.2rem;
     }
     .education .container::before {
-        left: 61px;
+        left: 71px;
         border: medium solid var(--main-color);
         border-width: 10px 10px 10px 0;
         border-color: transparent  var(--main-color) transparent transparent
